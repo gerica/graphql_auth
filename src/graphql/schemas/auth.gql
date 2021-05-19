@@ -1,0 +1,28 @@
+input UserInput {
+  login: String
+  password: String
+}
+
+type User {
+  id: String
+  login: String
+}
+
+type Beer {
+  id: Int!
+  name: String!
+  brand: String
+  price: Float
+}
+
+type Query {
+  beer(id: Int!): Beer
+  beers(brand: String!): [Beer]
+  allUsers: [User]
+  fieldName(login: String): User
+}
+
+type Mutation {
+  register(input: UserInput): String
+  login(input: UserInput): String
+}
