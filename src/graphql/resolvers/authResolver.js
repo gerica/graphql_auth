@@ -8,6 +8,7 @@ export default {
       logger.info(dataSources);
       return UserService.findBy({ login });
     },
+    infoAuth: () => 'Graphql for auth',
   },
 
   Mutation: {

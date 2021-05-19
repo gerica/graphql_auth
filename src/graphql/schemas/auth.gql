@@ -16,6 +16,7 @@ type Beer {
 }
 
 type Query {
+  infoAuth: String
   beer(id: Int!): Beer
   beers(brand: String!): [Beer]
   allUsers: [User]
