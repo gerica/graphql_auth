@@ -19,6 +19,6 @@ const server = new ApolloServer({
 });
 
 // The `listen` method launches a web server.
-server.listen({ port: PORT, path: PATH_GRAPHQL, host: '52.15.186.202' }).then(({ url }) => {
+server.listen({ port: PORT, path: PATH_GRAPHQL }).then(({ url }) => {
   logger.info(url, 'Running a GraphQL API server at');
 });
