@@ -8,7 +8,7 @@ export default {
       logger.info(dataSources);
       return UserService.findBy({ login });
     },
-    infoAuth: () => 'Graphql for auth',
+    version: () => 'Radiolife version auth: 1.0.0-rc-01',
   },
 
   Mutation: {

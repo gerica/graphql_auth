@@ -1,0 +1,11 @@
+{
+    "apps": [
+      {
+        "name": "Radiolife-auth",
+        "script": "npm",
+        "args": "start",
+        "watch_delay": 1000
+      }
+    ]
+  }
+  
