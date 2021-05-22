@@ -16,7 +16,7 @@ type Beer {
 }
 
 type Query {
-  version: String
+  versionAuth: String
   beer(id: Int!): Beer
   beers(brand: String!): [Beer]
   allUsers: [User]
