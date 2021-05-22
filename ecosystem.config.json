@@ -13,7 +13,7 @@
       "user": "ubuntu",
       "host": ["ec2-3-140-244-169.us-east-2.compute.amazonaws.com"],
       "ref": "origin/main",
-      "repo": "git@github.com:gerica/grapql_apollo_getway.git",
+      "repo": "git@github.com:gerica/graphql_auth.git",
       "path": "/home/ubuntu/projects/radiolife",
       "post-deploy": "npm install && pm2 startOrRestart ecosystem.config.json"
     }
