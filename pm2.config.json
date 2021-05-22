@@ -1,7 +1,7 @@
 {
     "apps": [
       {
-        "name": "Radiolife-auth",
+        "name": "RadiolifeAuth",
         "script": "npm",
         "args": "start",
         "watch_delay": 1000
