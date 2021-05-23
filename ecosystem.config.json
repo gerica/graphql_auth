@@ -16,6 +16,14 @@
       "repo": "git@github.com:gerica/graphql_auth.git",
       "path": "/home/ubuntu/projects/radiolife",
       "post-deploy": "npm install && pm2 startOrRestart ecosystem.config.json"
+    },
+    "production-local": {
+      "user": "ubuntu",
+      "host": ["localhost"],
+      "ref": "origin/main",
+      "repo": "git@github.com:gerica/graphql_auth.git",
+      "path": "/home/ubuntu/projects/radiolife",
+      "post-deploy": "npm install && pm2 startOrRestart ecosystem.config.json"
     }
   }
 }
