@@ -2,7 +2,7 @@ echo "------> Kill all the running PM2 actions"
 pm2 kill
 
 echo "------> Jump to app folder"
-cd /home/ubuntu/projects/graphql/current/
+cd /home/ubuntu/projects/radiolife/current/
 
 echo "------> Update app from Git"
 git pull
