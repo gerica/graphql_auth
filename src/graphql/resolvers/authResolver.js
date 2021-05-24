@@ -8,7 +8,7 @@ export default {
       logger.info(dataSources);
       return UserService.findBy({ login });
     },
-    versionAuth: () => 'Radiolife version auth: 1.0.0-rc-02',
+    versionAuth: () => 'Radiolife version auth: 1.0.0-rc-01',
   },
 
   Mutation: {
