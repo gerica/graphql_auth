@@ -5,16 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/.bin/jest",
-    "start": "node src/server.js",
-    "pm2-start": "pm2 startOrRestart pm2.config.json --watch",
+    "pm2-start": "pm2 startOrRestart ecosystem.config.json --watch --only RL-Auth-Local",
     "pm2-stop": "pm2 stop RadiolifeAuth",
     "pm2-kill": "pm2 kill",
     "pm2-list": "pm2 list",
     "see-logs": "pm2 logs",
-    "restart-production": "pm2 startOrRestart ecosystem.config.json",
-    "deploy-production": "pm2 deploy ecosystem.config.json production",
-    "deploy-production-setup": "pm2 deploy ecosystem.config.json production setup",
-    "deploy-local-ec2": "pm2 deploy ecosystem.config.json production-local"
+    "restart-production": "pm2 startOrRestart ecosystem.config.json --only RL-Auth-Local",
+    "deploy-production": "pm2 deploy ecosystem.config.json production --only RL-Auth-Local",
+    "deploy-production-setup": "pm2 deploy ecosystem.config.json production setup --only RL-Auth-Local"
   },
   "keywords": [],
   "author": "",
